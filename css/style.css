@@ -1,0 +1,21 @@
+:root{--sky:#dff3ff;--sun:#ffd23f;--pink:#ff7eb6;--mint:#5ed9a8;--ink:#2b2a4c}
+body{font-family:'Baloo 2','Comic Sans MS',sans-serif;background:linear-gradient(#dff3ff,#fff4e0);color:var(--ink);min-height:100vh;font-size:1.2rem}
+.top{padding-top:.75rem}.stars{background:var(--sun);color:var(--ink);font-size:1.2rem}
+h1,h2{font-weight:800}.mascot{font-size:6rem;animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.bubble{display:inline-block;background:#fff;border-radius:2rem;padding:.5rem 1.5rem}
+.big{border-radius:1.5rem;padding:1rem;font-size:1.5rem;font-weight:800;width:100%;border:0;box-shadow:0 5px 0 rgba(0,0,0,.15);background:#fff;color:var(--ink)}
+.big:active{transform:translateY(3px);box-shadow:none}
+.c0{background:#ffd23f}.c1{background:#ffb4d2}.c2{background:#a9e8cf}.c3{background:#b9d8ff}.c4{background:#ffc9a0}
+.opt{font-size:3rem;min-height:110px}.opt.ok{background:var(--mint)}.opt.no{animation:shake .4s;background:#ffe0e0}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.prompt{font-size:2.4rem;text-align:center;margin:1rem 0;font-weight:800}
+.fb{text-align:center;font-size:1.6rem;min-height:2.4rem;margin-top:1rem}
+.fcard{background:#fff;border-radius:1.5rem;padding:1rem;text-align:center;cursor:pointer;border:0;width:100%;box-shadow:0 4px 0 rgba(0,0,0,.1)}
+.fcard .e{font-size:3.5rem;display:block}.tile{display:inline-block;margin:.25rem;padding:.4rem 1rem;border-radius:1rem;border:0;background:var(--sun);font-weight:800;font-size:1.6rem}
+.line{min-height:4rem;background:#fff;border-radius:1rem;border:3px dashed var(--pink);padding:.5rem;margin:1rem 0}
+.chip{border-radius:2rem;border:0;padding:.3rem 1rem;background:#fff;margin:.2rem;font-weight:800}.chip.on{background:var(--pink);color:#fff}
+.toast-b{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:.6rem 1.5rem;border-radius:2rem;display:none;z-index:9}
+.small-note{font-size:.95rem;opacity:.75;text-align:center}
+button:focus-visible{outline:4px solid var(--ink);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
